@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>KALTIK</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<!-- start header kalkuator segitiga -->
+	<header>
+		<h1 class="judul">KALKULATOR SEGITIGA</h1>
+		<p class="deskripsi"><b> Selamat datang di KALTIK !! </b> </p>
+		<p class="deskripsi"> WEB APP untuk menghitung nilai Luas dan Keliling Segitiga </p>
+	</header>
+	<!-- end header kalkuator segitiga -->
+
+	<main class="wrap">
+		<!-- start navigasi pilihan rumus -->
+		<nav class="menu">
+			<a href="#luas" class="button button1">Luas Segitiga</a>
+			<a href="#keliling" class="button button1">Keliling Segitiga</a>
+		</nav>
+
+		<!-- start kaltik -->
+		<div class="kalkulator">
+			<!-- start luas segitiga -->
+			<div id="luas" class="konten">
+				<img
+					src="https://cdn-web.ruangguru.com/landing-pages/assets/hs/Rumus%20Luas%20Segitiga%20Jika%20Diketahui%20Alas%20dan%20Tinggi%20-%20Matematika%20Kelas%207.png">
+				<h1> Kalkulator Luas Segitiga </h1>
+				<hr>
+				<div class="form">
+					<label for="alas">Nilai Alas</label><br>
+					<input type="number" id="alas"><br>
+				</div>
+				<div class="form">
+					<label for="tinggi">Nilai Tinggi</label><br>
+					<input type="number" id="tinggi"><br>
+				</div>
+
+				<div class="hasil" id="hasil1"></div>
+				<button class="tombol" id="hitung1">Hitung</button>
+				<button class="tombolriset" id="reset1">Reset</button>
+
+			</div>
+			<!-- end luas segitiga -->
+
+			<!-- start keliling segitiga -->
+			<div id="keliling" class="konten">
+				<img
+					src="https://cdn-web.ruangguru.com/landing-pages/assets/hs/Rumus%20Keliling%20Segitiga%20-%20Matematika%20Kelas%207.png">
+				<h1> Kalkulator Keliling Segitiga </h1>
+				<hr>
+				<div class="form">
+					<label for="sisi1">Nilai Sisi Pertama</label><br>
+					<input type="number" id="sisi1"><br>
+				</div>
+				<div class="form">
+					<label for="sisi2">Nilai Sisi Kedua</label><br>
+					<input type="number" id="sisi2"><br>
+				</div>
+				<div class="form">
+					<label for="sisi3">Nilai Sisi Ketiga</label><br>
+					<input type="number" id="sisi3"><br>
+				</div>
+
+				<div class="hasil" id="hasil2"></div>
+				<button class="tombol" id="hitung2">Hitung</button>
+				<button class="tombolriset" id="reset2">Reset</button>
+			</div>
+			<!-- end keliling segitiga -->
+		</div>
+		<!-- end kaltik -->
+	</main>
+
+	<footer class="footer">
+		<p>RevoU || by Nur Saifuddin</p>
+	</footer>
+
+</body>
+<script src="js/script.js"></script>
+
+</html>
